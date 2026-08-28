@@ -13,7 +13,7 @@ function Navbar() {
             <div className=''>
                 <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="lg:hidden fixed z-50 p-5"
+                className="md:hidden fixed z-50 p-5"
                 >
                     {isOpen ? (
                     <X className="w-6 h-6 text-red-600" />
@@ -23,7 +23,7 @@ function Navbar() {
                 </button>
             </div>
 
-            <div className={`fixed top-0 left-0 z-40 sm:flex flex-col justify-between bg-gray-900 w-60 min-h-screen text-[#c8fbff] font-sans transition-transform duration-500 ease-in-out lg:static lg:w-80 lg:translate-x-0 ${isOpen ? "translate-x-0" : "-translate-x-full"}`}>
+            <div className={`fixed top-0 left-0 z-40 sm:flex flex-col justify-between bg-gray-900 w-60 h-screen text-[#c8fbff] font-sans transition-transform duration-500 ease-in-out md:sticky lg:w-80 md:translate-x-0 ${isOpen ? "translate-x-0" : "-translate-x-full"}`}>
                 <div>
                     <div className={`uppercase text-[#00f0ff] p-10 font-sans text-2xl tracking-[0.25em]`}>kinetics</div>
                     <ul className='m-5 font-semibold'>

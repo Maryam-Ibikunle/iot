@@ -8,7 +8,7 @@ import Realtime from './pages/Realtime'
 
 const App = () => {
   return (
-    <div>     
+      
       <BrowserRouter>  
       <div className='flex min-h-screen'>
         <Navbar/>   
@@ -23,7 +23,7 @@ const App = () => {
           </main>
           </div> 
       </BrowserRouter>
-    </div>
+
   )
 }
 
