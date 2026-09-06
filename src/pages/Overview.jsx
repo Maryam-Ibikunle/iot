@@ -7,8 +7,8 @@ import Recent from '../components/Recent.jsx'
 import Metrics from '../components/Metrics.jsx'
 const Overview = () => {
   return (
-    <main className="bg-gray-950">
-        <div className='mx-2 md:mx-10 pt-5'>
+    <main className="bg-gray-950 w-screen">
+        <div className='mx-4 md:mx-10 pt-5'>
             <Searchbar/> 
         </div>
         <div id='body' className='mt-10 flex flex-col '>
@@ -19,7 +19,7 @@ const Overview = () => {
                     </div>
                 ))}
             </div>
-            <div className='flex flex-col md:flex-row justify-between mx-10  '>
+            <div className='flex flex-col md:flex-row justify-between mx-10 items-center '>
                 <div className='w-full w- md:w-5/7 md:h-120 h-80 rounded-2xl text-white bg-gray-800 p-5 flex flex-col mt-10 md:mr-2'>
                     <div className='mb-5'>
                         <h2 className='text-3xl font-bold tracking-wider'>System Performance</h2>

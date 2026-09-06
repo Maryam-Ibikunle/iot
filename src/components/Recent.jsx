@@ -4,7 +4,7 @@ import { recent } from '../constants'
 const Recent = () => {
     
   return (
-    <div className='p-8 h-80 min-h-fit md:h-120 text-white w-80 bg-gray-800 rounded-2xl mt-10'>
+    <div className='p-8  min-h-fit md:h-120 text-white w-80 h-auto bg-gray-800 rounded-2xl mt-10'>
         <h2 className='font-semibold text-3xl'>Recent Activity</h2>
         <ul>
             {recent.map(r=>(

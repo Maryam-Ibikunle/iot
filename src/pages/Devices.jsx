@@ -7,7 +7,7 @@ import Device from '../components/Device'
 
 const Devices = () => {
   return (
-    <main className="bg-gray-950 h-screen overflow-y-scroll font-sans text-[#c8fbff]">
+    <main className="bg-gray-950 h-screen overflow-y-scroll font-sans text-[#c8fbff] w-screen">
       <div className='mx-4 md:mx-10 py-5'>
           <Searchbar/> 
       </div>
@@ -37,9 +37,9 @@ const Devices = () => {
         <div className='flex flex-row justify-between'>
           <div className='inline-flex items-center justify-between border border-gray-600 rounded p-1'>
             <SearchIcon/>
-            <input type="text" placeholder="Filter by name..." className='focus:border-none focus:outline-0 mx-2 '/>
+            <input type="text" placeholder="Filter by name..." className='focus:border-none focus:outline-0 mx-2 hidden md:block'/>
           </div>
-          <div className='inline-flex items-center ml-2'>
+          <div className='md:inline-flex items-center ml-2 hidden'>
             <Grid2X2 className='mr-1'/>
             <List/>
             {/* grid/flex */}
