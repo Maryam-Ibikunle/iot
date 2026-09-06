@@ -7,7 +7,7 @@ import Recent from '../components/Recent.jsx'
 import Metrics from '../components/Metrics.jsx'
 const Overview = () => {
   return (
-    <main className="bg-gray-950 w-screen">
+    <main className="bg-gray-950 w-screen md:w-auto">
         <div className='mx-4 md:mx-10 pt-5'>
             <Searchbar/> 
         </div>

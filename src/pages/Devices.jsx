@@ -7,7 +7,7 @@ import Device from '../components/Device'
 
 const Devices = () => {
   return (
-    <main className="bg-gray-950 h-screen overflow-y-scroll font-sans text-[#c8fbff] w-screen">
+    <main className="bg-gray-950 h-screen overflow-y-scroll font-sans text-[#c8fbff] w-screen md:w-auto">
       <div className='mx-4 md:mx-10 py-5'>
           <Searchbar/> 
       </div>
