@@ -12,9 +12,11 @@ const Overview = () => {
             <Searchbar/> 
         </div>
         <div id='body' className='mt-10 flex flex-col '>
-            <div className='grid grid-cols-2 lg:grid-cols-4 gap-6 mx-4 md:mx-10'>
+            <div className='grid grid-cols-2 lg:grid-cols-4 gap-6 mx-4 md:mx-10 text-[#6a9b8b]'>
                 {report.map(r=>(
-                    <Report key={r.id} title={r.title} figure={r.figure} analysis={r.analysis} color={r.color} icon={r.icon}/>
+                    <div className={`relative  w-full  aspect-7/5 rounded-2xl p-0.5 bg-linear-to-r ${r.color}  to-black-500 flex flex-row justify-center items-center animate-gradient bg-size-[200%_200%]`}>
+                        <Report key={r.id} title={r.title} figure={r.figure} analysis={r.analysis} color={r.color} icon={r.icon}/>
+                    </div>
                 ))}
             </div>
             <div className='flex flex-col md:flex-row justify-between mx-10  '>

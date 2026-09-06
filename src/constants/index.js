@@ -12,6 +12,13 @@ export const report = [
     {id:"networkload", title:"network load", figure:"45 TB", analysis:["Data Processed(24h)"], color:"from-orange-300", icon:"text-orange-300"},
 ]
 
+export const deviceReport = [
+    {id:"totalactive", title:"total active", figure:"1204", analysis:["12% from last week"], color:"from-white", icon:"text-white"},
+    {id:"disconnected", title:"disconnected", figure:"42", analysis:["Requires attention"], color:"from-orange-300", icon:"text-orange-300"},
+    {id:"lowbattery", title:"low battery", figure:"18", analysis:["< 15% remaining"], color:"from-green-100", icon:"text-[#00f0ff]"},
+    {id:"networkload", title:"network load", figure:"45 TB", analysis:["Data Processed(24h)"], color:"from-orange-300", icon:"text-orange-300"},
+]
+
 export const data = [
         { time: "10:00", cpu: 42, memory: 55, network: 30 },
         { time: "11:00", cpu: 58, memory: 61, network: 45 },
